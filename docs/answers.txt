@@ -1,0 +1,89 @@
+(a) Paste the console output you saved at the end of step 3.C (2 points)
+
+wc-dhcp98d192:Assignment1 ethefiend$ git commit -a
+[master 4371ef6] Saved output from git status to text file
+ 1 file changed, 5 insertions(+)
+wc-dhcp98d192:Assignment1 ethefiend$ git push origin master
+Username for 'https://github.com': eremond
+Password for 'https://eremond@github.com':
+Enumerating objects: 11, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 897 bytes | 448.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/eremond/Assignment1.git
+   3d373c9..4371ef6  master -> master
+wc-dhcp98d192:Assignment1 ethefiend$
+
+
+(b) How many commits have been done to the repository (not only by you, but by
+anyone) so far? Write the git command you used to get this information (4 points)
+
+• 5 Commits
+• 'git log'
+
+(c) When was the .gitignore file modified last? Write the git command you used
+to get this information (4 points)
+
+• Thu Jan 10 16:45:38 2019
+• 'git log -- .gitignore'
+
+(d) Mention two reasons why branches are used in a Git repository (4 points)
+
+• Version control.  We want to be able to go back to our previous work and make
+changes if necessary.  Having a branch allows us to work without losing our previous
+work.
+
+• Implementing something new. If you have a feature that is causing problems
+in other parts of your work you can use a branch to test it out and make it work
+with the code without messing with your project's previous state.
+
+(e) What is the difference between git log and git status? (4 points)
+
+git log basically tells you the history of commits and their details.
+With git status we see how many commits behind the local branch is and what was changed
+since the last push.
+
+(f) What command would you use to see the commits where “Weapon.h” was one
+of the committed files? (4 points)
+
+git log -- Weapon.h
+
+(g) What command would you use to see the commits whose commit message
+contains the word “file”? (4 points)
+
+git log --grep='file'
+
+(h) In the context of object-oriented programming (I) What is inheritance? (II)
+What is polymorphism? (III) What is encapsulation? (6 points)
+
+I: In OO Programming inheritance can be used to describe a case when an object
+'inherits' the characteristics of it's parent class.  This way you can use the
+features of your parent class without having to reimplement them.  Just how a
+'Football Player' object may be a child class of a 'Athlete' parent class.
+
+II: Polymorphism can refer to reimplementing the same features for special cases.
+For example we may have multiple different types of car objects like:
+'Truck', 'Sport', 'FourDoor'.  All these objects can have a Drive() function but
+they can all be implemented in different ways.
+
+Read the “Git Commands, workflow, and resources.pdf” file on Canvas and answer the
+following questions:
+(i) What is the main difference between the “Dictator and Lieutenants” workflow
+and the “Integration management” workflow”? (5 points)
+
+The main difference seems to be that the developers are now able to make more
+pushes to their own repositories with less conflict but the integration manager
+will be left will all the conflict resolution.  In the Dictator and Lieutenants
+workflow the pusher doesn't handle the conflict resolution as the 'Lieutenants'
+work with the developers.
+
+(j) Why a team of 100 developers would benefit more by following the “Dictator
+and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+
+If 100 developers were pushing to their own repositories it would be a nightmare
+for the integration manager.  The Dictator and Lieutenants workflow allows there
+to be a good Lieutenant to developer ratio so conflict resolution wouldn't be as
+difficult.
