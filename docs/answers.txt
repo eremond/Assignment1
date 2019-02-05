@@ -87,3 +87,15 @@ If 100 developers were pushing to their own repositories it would be a nightmare
 for the integration manager.  The Dictator and Lieutenants workflow allows there
 to be a good Lieutenant to developer ratio so conflict resolution wouldn't be as
 difficult.
+
+Is the RoleGame prototype using polymorphism and/or encapsulation? If you find that the
+prototype is using any of these two OOP principles, please discuss in which way the
+prototype is using it.
+
+The Role Playing Game is a great example of polymorphism.  We are using multiple
+hit() methods for each type of weapon but they all have their own specific
+instructions to make them unique.  This allows us to make a variety of weapons
+that work the same way but deal different levels of damage.  I wouldn't
+necessarily say this is the BEST representation of encapsulation but we do see that
+with the Weapon & Weapon factory class as they use protected and private to declare
+class elements.
